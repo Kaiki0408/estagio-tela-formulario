@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #eee;
+}
+form {
+    background-color: #fff;
+    width: 360px;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.select-container {
+    display: flex;
+    gap: 2rem;
+}
+.select-content {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+input[type="radio"] {
+    cursor: pointer;
+}
+input, select {
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: .5rem;
+}
+input:focus, select:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+select {
+    padding: 0 .3rem;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-prox, .btn-ante {
+    width: 100px;
+    padding: .3rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-prox {
+    color: #fff;
+    background-color: #31526b;
+    border: none;
+}
+.btn-ante{
+    border: 1px solid #ddd;
+    background-color: transparent;
+}
+.btn-prox:hover {
+    background-color: #253e52;
+}
+.btn-ante:hover {
+    /* color: #fff; */
+    background-color: #ddd;
+}
+.page {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.page.active {
+    display: flex;
+}
+.hidden {
+    display: none;
+}
+body > h1 {
+    margin-bottom: 2rem;
+}
